@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodePlayGround · The most popular HTML, CSS, and JS library in the world.</title>
+    <link rel="shortcut icon" href="img/fav.png" type="image/x-icon">
+    <link rel="stylesheet" href="prism.css">
+    <script src="js/prism.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background: rgba(87, 87, 87, 0.475);
+            /* Dark background color */
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: grey;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgb(82, 82, 82);
+            /* Darker color on hover */
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-optical-sizing: auto;
+        }
+
+        body {
+            font-family: "Jost", sans-serif;
+            background-color: #202124;
+
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #28292a;
+            color: white;
+            height: 67px;
+        }
+
+        nav a {
+            font-family: "Fjalla One", sans-serif;
+            text-decoration: none;
+            color: whitesmoke;
+            font-weight: 200;
+            position: relative;
+            right: 40px;
+            margin: 12px;
+            font-size: 20px;
+        }
+
+        nav a:hover {
+            transition: all 0.3s;
+            color: green;
+
+        }
+
+        .logo img {
+            width: 175px;
+            bottom: -3px;
+            position: relative;
+        }
+
+        .logo svg {
+            width: 34px;
+        }
+
+        .content {
+            font-weight: 600;
+        }
+
+        .container {
+            width: 60vw;
+            margin: auto;
+            padding: 32px 0;
+        }
+
+        .container ol li {
+            font-weight: 600;
+            color: whitesmoke;
+        }
+
+        .one a {
+            color: white;
+        }
+
+        .two a {
+            color: white;
+        }
+
+        .three a {
+            color: green;
+        }
+
+        #progress {
+            position: fixed;
+            bottom: 20px;
+            right: 10px;
+            height: 60px;
+            width: 60px;
+            display: none;
+            place-items: center;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+
+        }
+
+        #progress-value {
+            display: block;
+            height: calc(100% - 15px);
+            width: calc(100% - 15px);
+            background-color: whitesmoke;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            font-size: 35px;
+            color: black;
+            font-weight: 700;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+        .main {
+            margin-left: 38px;
+            margin-top: 14px;
+        }
+        footer {
+            background-color: black;
+            height: 7vw;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            bottom: -14px;
+            position: relative;
+        }
+        .copyright{
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <span class="logo">
+            <img src="img/logo.png" alt="">
+        </span>
+        <span>
+            <span class="one">
+                <a href="index.html">HTML</a>
+                </div>
+                <span class="two">
+                    <a href="css.html">CSS</a>
+                </span>
+                <span class="three">
+                    <a href="">JS</a>
+                </span>
+
+            </span>
+    </nav>
+    <div class="main">
+        <h1 style="color: white; font-size: 43px;">JS</h1><span style="top: -50px;
+    position: relative;
+    left: 43px;
+    font-size: 32px;color: #9b9b9b;">cheatsheet</span>
+    </div>
+    <div class="container">
+        <ol>
+            <li>JS variable</li>
+            <pre class="lang-js"><code>const PI = 3.14159;</code></pre>
+            <li>JS loop</li>
+            <pre class="lang-js"><code>for (let i = 0; i < 5; i++) {
+            console.log("Index: " + i);
+            }</code></pre>
+            <li>JS conditional statement</li>
+            <pre class="lang-js"><code>let x = 10;
+            if (x > 5) {
+            console.log("x is greater than 5");
+            } else {
+            console.log("x is less than or equal to 5");
+            }</code></pre>
+            <li>JS object</li>
+            <pre class="lang-js"><code>let person = {
+            name: "John",
+            age: 30,
+            city: "New York"
+            };</code></pre>
+            <li>JS array</li>
+            <pre class="lang-js"><code>let numbers = [1, 2, 3, 4, 5];</code></pre>
+            <li>JS function</li>
+            <pre class="lang-js"><code>function greet(name) {
+            console.log("Hello, " + name + "!");
+            }</code></pre>
+            <li>JS array method (push)</li>
+<pre class="lang-js"><code>let fruits = ["apple", "banana"];
+fruits.push("orange");</code></pre>
+<li>JS array method (pop)</li>
+<pre class="lang-js"><code>let fruits = ["apple", "banana", "orange"];
+fruits.pop();</code></pre>
+<li>JS array method (forEach)</li>
+<pre class="lang-js"><code>let numbers = [1, 2, 3, 4, 5];
+numbers.forEach(function(number) {
+console.log(number);
+});</code></pre>
+<li>JS string method (concat)</li>
+<pre class="lang-js"><code>let str1 = "Hello, ";
+let str2 = "world!";
+let greeting = str1.concat(str2);</code></pre>
+<li>JS string method (toUpperCase)</li>
+<pre class="lang-js"><code>let str = "hello";
+let upperCaseStr = str.toUpperCase();</code></pre>
+<li>JS string method (slice)</li>
+<pre class="lang-js"><code>let str = "Hello, world!";
+let slicedStr = str.slice(7);</code></pre>
+<li>JS string method (indexOf)</li>
+<pre class="lang-js"><code>let str = "Hello, world!";
+let index = str.indexOf("world");</code></pre>
+<li>JS string method (replace)</li>
+<pre class="lang-js"><code>let str = "Hello, world!";
+let newStr = str.replace("world", "mars");</code></pre>
+<li>JS string method (split)</li>
+<pre class="lang-js"><code>let str = "apple, banana, orange";
+let fruits = str.split(", ");</code></pre>
+<li>JS object method (Object.keys)</li>
+<pre class="lang-js"><code>let person = {
+name: "John",
+age: 30,
+city: "New York"
+};
+let keys = Object.keys(person);</code></pre>
+<li>JS object method (Object.values)</li>
+<pre class="lang-js"><code>let person = {
+name: "John",
+age: 30,
+city: "New York"
+};
+let values = Object.values(person);</code></pre>
+<li>JS object method (Object.entries)</li>
+<pre class="lang-js"><code>let person = {
+name: "John",
+age: 30,
+city: "New York"
+};
+let entries = Object.entries(person);</code></pre>
+<li>JS Math object (Math.PI)</li>
+<pre class="lang-js"><code>let pi = Math.PI;</code></pre>
+<li>JS Math object (Math.round)</li>
+<pre class="lang-js"><code>let rounded = Math.round(4.7);</code></pre>
+<li>JS Math object (Math.floor)</li>
+<pre class="lang-js"><code>let roundedDown = Math.floor(4.7);</code></pre>
+<li>JS Math object (Math.ceil)</li>
+<pre class="lang-js"><code>let roundedUp = Math.ceil(4.3);</code></pre>
+<li>JS Math object (Math.random)</li>
+<pre class="lang-js"><code>let randomNumber = Math.random();</code></pre>
+<li>JS Date object (new Date)</li>
+<pre class="lang-js"><code>let currentDate = new Date();</code></pre>
+<li>JS Date object (getMonth)</li>
+<pre class="lang-js"><code>let month = currentDate.getMonth();</code></pre>
+<li>JS Date object (getFullYear)</li>
+<pre class="lang-js"><code>let year = currentDate.getFullYear();</code></pre>
+<li>JS Date object (getDay)</li>
+<pre class="lang-js"><code>let day = currentDate.getDay();</code></pre>
+<li>JS Date object (getDate)</li>
+<pre class="lang-js"><code>let date = currentDate.getDate();</code></pre>
+<li>JS Date object (getHours)</li>
+<pre class="lang-js"><code>let hours = currentDate.getHours();</code></pre>
+<li>JS Date object (getMinutes)</li>
+<pre class="lang-js"><code>let minutes = currentDate.getMinutes();</code></pre>
+<li>JS Date object (getSeconds)</li>
+<pre class="lang-js"><code>let seconds = currentDate.getSeconds();</code></pre>
+<li>JS Date object (getMilliseconds)</li>
+<pre class="lang-js"><code>let milliseconds = currentDate.getMilliseconds();</code></pre>
+<li>JS Date object (toDateString)</li>
+<pre class="lang-js"><code>let dateString = currentDate.toDateString();</code></pre>
+<li>JS Date object (toISOString)</li>
+<pre class="lang-js"><code>let isoString = currentDate.toISOString();</code></pre>
+<li>JS Date object (toLocaleDateString)</li>
+<pre class="lang-js"><code>let localeDateString = currentDate.toLocaleDateString();</code></pre>
+<li>JS Date object (toLocaleTimeString)</li>
+<pre class="lang-js"><code>let localeTimeString = currentDate.toLocaleTimeString();</code></pre>
+<li>JS Date object (toLocaleString)</li>
+<pre class="lang-js"><code>let localeString = currentDate.toLocaleString();</code></pre>
+<li>JS Date object (UTC methods)</li>
+<pre class="lang-js"><code>let utcDate = currentDate.toUTCString();</code></pre>
+<li>JS array method (forEach with index)</li>
+<pre class="lang-js"><code>let numbers = [1, 2, 3, 4, 5];
+numbers.forEach(function(number, index) {
+console.log("Index: " + index + ", Value: " + number);
+});</code></pre>
+<li>JS array method (map)</li>
+<pre class="lang-js"><code>let numbers = [1, 2, 3, 4, 5];
+let doubled = numbers.map(function(number) {
+return number * 2;
+});</code></pre>
+<li>JS array method (filter)</li>
+<pre class="lang-js"><code>let numbers = [1, 2, 3, 4, 5];
+let evenNumbers = numbers.filter(function(number) {
+return number % 2 === 0;
+});</code></pre>
+<li>JS array method (reduce)</li>
+<pre class="lang-js"><code>let numbers = [1, 2, 3, 4, 5];
+let sum = numbers.reduce(function(accumulator, currentValue) {
+return accumulator + currentValue;
+}, 0);</code></pre>
+<li>JS array method (every)</li>
+<pre class="lang-js"><code>let numbers = [2, 4, 6, 8, 10];
+let allEven = numbers.every(function(number) {
+return number % 2 === 0;
+});</code></pre>
+<li>JS array method (some)</li>
+<pre class="lang-js"><code>let numbers = [1, 2, 3, 4, 5];
+let hasEven = numbers.some(function(number) {
+return number % 2 === 0;
+});</code></pre>
+
+
+            <div id="progress">
+                <span id="progress-value"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                        height="24" color="#000000" fill="none">
+                        <path d="M18 15C18 15 13.5811 9.00001 12 9C10.4188 8.99999 6 15 6 15" stroke="currentColor"
+                            stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg></span>
+            </div>
+
+        </ol>
+    </div>
+    <footer>
+        <div class="copyright">
+            <p style="color: white;">&copy; 2024 CodePlayGround. All rights reserved.</p>
+        </div>
+        <div class="footer">
+            <a href="https://www.linkedin.com/in/arhamhussain/"><img class="" src="svg/linkedin.svg"></a>
+            <a href="https://www.facebook.com"><img class="" src="svg/fb.svg"></a>
+            <a href="https://www.twitter.com"><img class="" src="svg/x.svg"></a>
+            <a href="https://www.instagram.com"><img class="" src="svg/insta.svg"></a>
+        </div>
+    </footer>
+</body>
+
+</html>

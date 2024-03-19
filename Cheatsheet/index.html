@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodePlayGround · The most popular HTML, CSS, and JS library in the world.</title>
+    <link rel="shortcut icon" href="img/fav.png" type="image/x-icon">
+    <link rel="stylesheet" href="prism.css">
+    <script src="js/prism.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background: rgba(87, 87, 87, 0.475);
+            /* Dark background color */
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: grey;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgb(82, 82, 82);
+            /* Darker color on hover */
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-optical-sizing: auto;
+        }
+
+        body {
+            font-family: "Jost", sans-serif;
+            background-color: #202124;
+
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #28292a;
+            color: white;
+            height: 67px;
+        }
+
+        nav a {
+            font-family: "Fjalla One", sans-serif;
+            text-decoration: none;
+            color: whitesmoke;
+            font-weight: 200;
+            position: relative;
+            right: 40px;
+            margin: 12px;
+            font-size: 20px;
+        }
+
+        nav a:hover {
+            transition: all 0.3s;
+            color: green;
+
+        }
+
+        .logo img {
+            width: 175px;
+            bottom: -3px;
+            position: relative;
+        }
+
+        .logo svg {
+            width: 34px;
+        }
+
+        .content {
+            font-weight: 600;
+        }
+
+        .container {
+            width: 60vw;
+            margin: auto;
+            padding: 32px 0;
+        }
+
+        .container ol li {
+            font-weight: 600;
+            color: whitesmoke;
+        }
+
+        .one a {
+            color: green;
+        }
+
+        .two a {
+            color: white;
+        }
+
+        .three a {
+            color: white;
+        }
+
+        #progress {
+            position: fixed;
+            bottom: 20px;
+            right: 10px;
+            height: 60px;
+            width: 60px;
+            display: none;
+            place-items: center;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+
+        }
+
+        #progress-value {
+            display: block;
+            height: calc(100% - 15px);
+            width: calc(100% - 15px);
+            background-color: whitesmoke;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            font-size: 35px;
+            color: black;
+            font-weight: 700;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .main {
+            margin-left: 38px;
+            margin-top: 14px;
+        }
+
+        footer {
+            background-color: black;
+            height: 7vw;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            bottom: -14px;
+            position: relative;
+        }
+        .copyright{
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <span class="logo">
+            <img src="img/logo.png" alt="">
+        </span>
+        <span>
+            <span class="one">
+                <a href="">HTML</a>
+                </div>
+                <span class="two">
+                    <a href="css.html">CSS</a>
+                </span>
+                <span class="three">
+                    <a href="js.html">JS</a>
+                </span>
+            </span>
+    </nav>
+    <div class="main">
+        <h1 style="color: white; font-size: 43px;">HTML</h1><span style="top: -50px;
+    position: relative;
+    left: 124px;
+    font-size: 32px;color: #9b9b9b;">cheatsheet</span>
+    </div>
+    <div class="container">
+        <ol>
+            <li>HTML basic structure</li>
+            <pre class="lang-html"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Hello, World!&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+            <li>HTML headings</li>
+            <pre class="lang-html"><code>&lt;h1&gt;Heading 1&lt;/h1&gt;
+&lt;h2&gt;Heading 2&lt;/h2&gt;
+&lt;h3&gt;Heading 3&lt;/h3&gt;
+&lt;h4&gt;Heading 4&lt;/h4&gt;
+&lt;h5&gt;Heading 5&lt;/h5&gt;
+&lt;h6&gt;Heading 6&lt;/h6&gt;</code></pre>
+            <li>HTML paragraph</li>
+            <pre class="lang-html"><code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code></pre>
+            <li>HTML line break</li>
+            <pre
+                class="lang-html"><code>&lt;p&gt;This is the first line.&lt;br&gt;This is the second line.&lt;/p&gt;</code></pre>
+            <li>HTML link</li>
+            <pre class="lang-html"><code>&lt;a href="https://www.example.com"&gt;Link&lt;/a&gt;</code></pre>
+            <li>HTML image</li>
+            <pre class="lang-html"><code>&lt;img src="image.jpg" alt="Description"&gt;</code></pre>
+            <li>HTML list (unordered)</li>
+            <pre class="lang-html"><code>&lt;ul&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+    &lt;li&gt;Item 3&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+            <li>HTML list (ordered)</li>
+            <pre class="lang-html"><code>&lt;ol&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+    &lt;li&gt;Item 3&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+            <li>HTML table</li>
+            <pre class="lang-html"><code>&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Header 1&lt;/th&gt;
+        &lt;th&gt;Header 2&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Data 1&lt;/td&gt;
+        &lt;td&gt;Data 2&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+            <li>HTML form</li>
+            <pre class="lang-html"><code>&lt;form action="/submit" method="post"&gt;
+    &lt;input type="text" name="username"&gt;
+    &lt;input type="password" name="password"&gt;
+    &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;</code></pre>
+            <li>HTML div</li>
+            <pre class="lang-html"><code>&lt;div&gt;This is a division.&lt;/div&gt;</code></pre>
+            <li>HTML span</li>
+            <pre
+                class="lang-html"><code>&lt;p&gt;This is a &lt;span&gt;span&lt;/span&gt; element.&lt;/p&gt;</code></pre>
+            <li>HTML input (text)</li>
+            <pre class="lang-html"><code>&lt;input type="text" name="name"&gt;</code></pre>
+            <li>HTML input (password)</li>
+            <pre class="lang-html"><code>&lt;input type="password" name="password"&gt;</code></pre>
+            <li>HTML input (checkbox)</li>
+            <pre class="lang-html"><code>&lt;input type="checkbox" name="agree"&gt;</code></pre>
+            <li>HTML input (radio)</li>
+            <pre class="lang-html"><code>&lt;input type="radio" name="gender" value="male"&gt; Male
+&lt;input type="radio" name="gender" value="female"&gt; Female</code></pre>
+            <li>HTML input (submit button)</li>
+            <pre class="lang-html"><code>&lt;input type="submit" value="Submit"&gt;</code></pre>
+            <li>HTML input (reset button)</li>
+            <pre class="lang-html"><code>&lt;input type="reset" value="Reset"&gt;</code></pre>
+            <li>HTML input (file)</li>
+            <pre class="lang-html"><code>&lt;input type="file" name="file"&gt;</code></pre>
+            <li>HTML input (number)</li>
+            <pre class="lang-html"><code>&lt;input type="number" name="quantity" min="1" max="5"&gt;</code></pre>
+            <li>HTML input (date)</li>
+            <pre class="lang-html"><code>&lt;input type="date" name="date"&gt;</code></pre>
+            <li>HTML input (email)</li>
+            <pre class="lang-html"><code>&lt;input type="email" name="email"&gt;</code></pre>
+            <li>HTML input (color)</li>
+            <pre class="lang-html"><code>&lt;input type="color" name="color"&gt;</code></pre>
+            <li>HTML input (range)</li>
+            <pre class="lang-html"><code>&lt;input type="range" name="range" min="0" max="100"&gt;</code></pre>
+            <li>HTML input (search)</li>
+            <pre class="lang-html"><code>&lt;input type="search" name="search"&gt;</code></pre>
+            <li>HTML input (tel)</li>
+            <pre class="lang-html"><code>&lt;input type="tel" name="phone"&gt;</code></pre>
+            <li>HTML input (url)</li>
+            <pre class="lang-html"><code>&lt;input type="url" name="website"&gt;</code></pre>
+            <li>HTML textarea</li>
+            <pre class="lang-html"><code>&lt;textarea name="message" rows="4" cols="50"&gt;
+Enter your message here.
+&lt;/textarea&gt;</code></pre>
+            <li>HTML select</li>
+            <pre class="lang-html"><code>&lt;select name="cars"&gt;
+    &lt;option value="volvo"&gt;Volvo&lt;/option&gt;
+    &lt;option value="saab"&gt;Saab&lt;/option&gt;
+    &lt;option value="fiat"&gt;Fiat&lt;/option&gt;
+    &lt;option value="audi"&gt;Audi&lt;/option&gt;
+&lt;/select&gt;</code></pre>
+            <li>HTML button</li>
+            <pre class="lang-html"><code>&lt;button&gt;Click Me&lt;/button&gt;</code></pre>
+            <li>HTML comment</li>
+            <pre class="lang-html"><code>&lt;!-- This is a comment --&gt;</code></pre>
+            <li>HTML meta tag (charset)</li>
+            <pre class="lang-html"><code>&lt;meta charset="UTF-8"&gt;</code></pre>
+            <li>HTML meta tag (viewport)</li>
+            <pre
+                class="lang-html"><code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code></pre>
+            <li>HTML link tag (stylesheet)</li>
+            <pre class="lang-html"><code>&lt;link rel="stylesheet" href="styles.css"&gt;</code></pre>
+            <li>HTML script tag (external)</li>
+            <pre class="lang-html"><code>&lt;script src="script.js"&gt;&lt;/script&gt;</code></pre>
+            <li>HTML script tag (internal)</li>
+            <pre class="lang-html"><code>&lt;script&gt;
+    // JavaScript code here
+&lt;/script&gt;</code></pre>
+            <li>HTML div with class</li>
+            <pre class="lang-html"><code>&lt;div class="container"&gt;
+    <!-- Content here -->
+&lt;/div&gt;</code></pre>
+            <li>HTML div with id</li>
+            <pre class="lang-html"><code>&lt;div id="header"&gt;
+    <!-- Header content here -->
+&lt;/div&gt;</code></pre>
+            <li>HTML span with style attribute</li>
+            <pre
+                class="lang-html"><code>&lt;p&gt;This is a &lt;span style="color: blue;"&gt;blue&lt;/span&gt; word.&lt;/p&gt;</code></pre>
+            <li>HTML image with width and height attributes</li>
+            <pre
+                class="lang-html"><code>&lt;img src="image.jpg" alt="Description" width="200" height="150"&gt;</code></pre>
+            <li>HTML anchor tag with target attribute</li>
+            <pre
+                class="lang-html"><code>&lt;a href="https://www.example.com" target="_blank"&gt;Link&lt;/a&gt;</code></pre>
+            <li>HTML ordered list with type attribute</li>
+            <pre class="lang-html"><code>&lt;ol type="I"&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+    &lt;li&gt;Item 3&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+            <li>HTML unordered list with start attribute</li>
+            <pre class="lang-html"><code>&lt;ul start="3"&gt;
+    &lt;li&gt;Item 3&lt;/li&gt;
+    &lt;li&gt;Item 4&lt;/li&gt;
+    &lt;li&gt;Item 5&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+            <li>HTML table with border attribute</li>
+            <pre class="lang-html"><code>&lt;table border="1"&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Cell 1&lt;/td&gt;
+        &lt;td&gt;Cell 2&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Cell 3&lt;/td&gt;
+        &lt;td&gt;Cell 4&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+            <li>HTML table with colspan and rowspan attributes</li>
+            <pre class="lang-html"><code>&lt;table border="1"&gt;
+    &lt;tr&gt;
+        &lt;td colspan="2"&gt;Header&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td rowspan="2"&gt;Cell 1&lt;/td&gt;
+        &lt;td&gt;Cell 2&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Cell 3&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+            <li>HTML table with caption</li>
+            <pre class="lang-html"><code>&lt;table border="1"&gt;
+    &lt;caption&gt;Table Caption&lt;/caption&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Cell 1&lt;/td&gt;
+        &lt;td&gt;Cell 2&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Cell 3&lt;/td&gt;
+        &lt;td&gt;Cell 4&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+            <li>HTML form with action and method attributes</li>
+            <pre class="lang-html"><code>&lt;form action="/submit" method="post"&gt;
+    <!-- Form inputs here -->
+&lt;/form&gt;</code></pre>
+            <li>HTML input (checkbox) with checked attribute</li>
+            <pre class="lang-html"><code>&lt;input type="checkbox" name="subscribe" checked&gt;</code></pre>
+            <li>HTML input (radio) with checked attribute</li>
+            <pre class="lang-html"><code>&lt;input type="radio" name="gender" value="male" checked&gt; Male
+&lt;input type="radio" name="gender" value="female"&gt; Female</code></pre>
+            <li>HTML input (text) with placeholder attribute</li>
+            <pre
+                class="lang-html"><code>&lt;input type="text" name="username" placeholder="Enter your username"&gt;</code></pre>
+            <li>HTML input (password) with maxlength attribute</li>
+            <pre class="lang-html"><code>&lt;input type="password" name="password" maxlength="10"&gt;</code></pre>
+            <li>HTML input (number) with min and max attributes</li>
+            <pre class="lang-html"><code>&lt;input type="number" name="age" min="18" max="100"&gt;</code></pre>
+            <li>HTML input (date) with required attribute</li>
+            <pre class="lang-html"><code>&lt;input type="date" name="birthdate" required&gt;</code></pre>
+            <li>HTML input (email) with pattern attribute</li>
+            <pre
+                class="lang-html"><code>&lt;input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"&gt;</code></pre>
+            <li>HTML input (file) with accept attribute</li>
+            <pre class="lang-html"><code>&lt;input type="file" name="avatar" accept="image/*"&gt;</code></pre>
+            <li>HTML select with multiple attribute</li>
+            <pre class="lang-html"><code>&lt;select name="fruits" multiple&gt;
+    &lt;option value="apple"&gt;Apple&lt;/option&gt;
+    &lt;option value="banana"&gt;Banana&lt;/option&gt;
+    &lt;option value="orange"&gt;Orange&lt;/option&gt;
+&lt;/select&gt;</code></pre>
+            <li>HTML textarea with rows and cols attributes</li>
+            <pre class="lang-html"><code>&lt;textarea name="message" rows="4" cols="50"&gt;
+Enter your message here.
+&lt;/textarea&gt;</code></pre>
+            <li>HTML button with type attribute</li>
+            <pre class="lang-html"><code>&lt;button type="submit"&gt;Submit&lt;/button&gt;</code></pre>
+            <li>HTML comment</li>
+            <pre class="lang-html"><code>&lt;!-- This is a comment --&gt;</code></pre>
+
+
+            <div id="progress">
+                <span id="progress-value"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                        height="24" color="#000000" fill="none">
+                        <path d="M18 15C18 15 13.5811 9.00001 12 9C10.4188 8.99999 6 15 6 15" stroke="currentColor"
+                            stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg></span>
+            </div>
+        </ol>
+    </div>
+
+    <footer>
+        <div class="copyright">
+            <p style="color: white;">&copy; 2024 CodePlayGround. All rights reserved.</p>
+        </div>
+        <div class="footer">
+            <a href="https://www.linkedin.com/in/arhamhussain/"><img class="" src="svg/linkedin.svg"></a>
+            <a href="https://www.facebook.com"><img class="" src="svg/fb.svg"></a>
+            <a href="https://www.twitter.com"><img class="" src="svg/x.svg"></a>
+            <a href="https://www.instagram.com"><img class="" src="svg/insta.svg"></a>
+        </div>
+    </footer>
+</body>
+
+</html>

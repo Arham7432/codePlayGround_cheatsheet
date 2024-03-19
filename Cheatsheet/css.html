@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodePlayGround · The most popular HTML, CSS, and JS library in the world.</title>
+    <link rel="shortcut icon" href="img/fav.png" type="image/x-icon">
+    <link rel="stylesheet" href="prism.css">
+    <script src="js/prism.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background: rgba(87, 87, 87, 0.475);
+            /* Dark background color */
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: grey;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgb(82, 82, 82);
+            /* Darker color on hover */
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-optical-sizing: auto;
+        }
+
+        body {
+            font-family: "Jost", sans-serif;
+            background-color: #202124;
+
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #28292a;
+            color: white;
+            height: 67px;
+        }
+
+        nav a {
+            font-family: "Fjalla One", sans-serif;
+            text-decoration: none;
+            color: whitesmoke;
+            font-weight: 200;
+            position: relative;
+            right: 40px;
+            margin: 12px;
+            font-size: 20px;
+        }
+
+        nav a:hover {
+            transition: all 0.3s;
+            color: green;
+
+        }
+
+        .logo img {
+            width: 175px;
+            bottom: -3px;
+            position: relative;
+        }
+
+        .logo svg {
+            width: 34px;
+        }
+
+        .content {
+            font-weight: 600;
+        }
+
+        .container {
+            width: 60vw;
+            margin: auto;
+            padding: 32px 0;
+        }
+
+        .container ol li {
+            font-weight: 600;
+            color: whitesmoke;
+        }
+
+        .one a {
+            color: white;
+        }
+
+        .two a {
+            color: green;
+        }
+
+        .three a {
+            color: white;
+        }
+
+        #progress {
+            position: fixed;
+            bottom: 20px;
+            right: 10px;
+            height: 60px;
+            width: 60px;
+            display: none;
+            place-items: center;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+        }
+
+        #progress-value {
+            display: block;
+            height: calc(100% - 15px);
+            width: calc(100% - 15px);
+            background-color: whitesmoke;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            font-size: 35px;
+            color: black;
+            font-weight: 700;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .main {
+            margin-left: 38px;
+            margin-top: 14px;
+        }
+        footer {
+            background-color: black;
+            height: 7vw;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            bottom: -14px;
+            position: relative;
+        }
+        .copyright{
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <span class="logo">
+            <img src="img/logo.png" alt="">
+        </span>
+        <span>
+            <span class="one">
+                <a href="index.html">HTML</a>
+                </div>
+                <span class="two">
+                    <a href="">CSS</a>
+                </span>
+                <span class="three">
+                    <a href="js.html">JS</a>
+                </span>
+
+            </span>
+    </nav>
+    <div class="main">
+        <h1 style="color: white; font-size: 43px;">CSS</h1><span style="top: -50px;
+    position: relative;
+    left: 85px;
+    font-size: 32px;color: #9b9b9b;">cheatsheet</span>
+    </div>
+    <div class="container">
+        <ol>
+            <li>CSS selector (class)</li>
+            <pre class="lang-css"><code>.container {
+                width: 100%;
+            }</code></pre>
+            <li>CSS selector (id)</li>
+            <pre class="lang-css"><code>#header {
+                background-color: gray;
+            }</code></pre>
+            <li>CSS selector (multiple elements)</li>
+            <pre class="lang-css"><code>h1, h2, h3 {
+                font-family: Arial, sans-serif;
+            }</code></pre>
+            <li>CSS selector (descendant)</li>
+            <pre class="lang-css"><code>.container p {
+                font-size: 16px;
+            }</code></pre>
+            <li>CSS selector (child)</li>
+            <pre class="lang-css"><code>.container > ul {
+                list-style-type: none;
+            }</code></pre>
+            <li>CSS selector (adjacent sibling)</li>
+            <pre class="lang-css"><code>h2 + p {
+                margin-top: 10px;
+            }</code></pre>
+            <li>CSS selector (attribute)</li>
+            <pre class="lang-css"><code>input[type="text"] {
+                border: 1px solid #ccc;
+            }</code></pre>
+            <li>CSS selector (pseudo-class)</li>
+            <pre class="lang-css"><code>a:hover {
+                color: red;
+            }</code></pre>
+            <li>CSS selector (pseudo-element)</li>
+            <pre class="lang-css"><code>p::first-line {
+                font-weight: bold;
+            }</code></pre>
+            <li>CSS property (color)</li>
+            <pre class="lang-css"><code>p {
+                color: green;
+            }</code></pre>
+            <li>CSS property (background-color)</li>
+            <pre class="lang-css"><code>body {
+                background-color: #f0f0f0;
+            }</code></pre>
+            <li>CSS property (font-family)</li>
+            <pre class="lang-css"><code>p {
+                font-family: Arial, sans-serif;
+            }</code></pre>
+            <li>CSS property (font-size)</li>
+            <pre class="lang-css"><code>p {
+                font-size: 16px;
+            }</code></pre>
+            <li>CSS property (font-weight)</li>
+            <pre class="lang-css"><code>p {
+                font-weight: bold;
+            }</code></pre>
+            <li>CSS property (text-align)</li>
+            <pre class="lang-css"><code>p {
+                text-align: center;
+            }</code></pre>
+            <li>CSS property (padding)</li>
+            <pre class="lang-css"><code>.container {
+                padding: 10px;
+            }</code></pre>
+            <li>CSS property (margin)</li>
+            <pre class="lang-css"><code>p {
+                margin: 0;
+            }</code></pre>
+            <li>CSS property (border)</li>
+            <pre class="lang-css"><code>div {
+                border: 1px solid #000;
+            }</code></pre>
+            <li>CSS property (width)</li>
+            <pre class="lang-css"><code>.container {
+                width: 100%;
+            }</code></pre>
+            <li>CSS property (height)</li>
+            <pre class="lang-css"><code>.container {
+                height: 200px;
+            }</code></pre>
+            <li>CSS property (display)</li>
+            <pre class="lang-css"><code>span {
+                display: inline-block;
+            }</code></pre>
+            <li>CSS property (position)</li>
+            <pre class="lang-css"><code>.element {
+                position: relative;
+                top: 10px;
+                left: 20px;
+            }</code></pre>
+            <li>CSS property (float)</li>
+            <pre class="lang-css"><code>img {
+                float: right;
+            }</code></pre>
+            <li>CSS property (clear)</li>
+            <pre class="lang-css"><code>.clearfix::after {
+                content: "";
+                display: table;
+                clear: both;
+            }</code></pre>
+            <li>CSS property (background-image)</li>
+            <pre class="lang-css"><code>div {
+                background-image: url("background.jpg");
+            }</code></pre>
+            <li>CSS property (background-size)</li>
+            <pre class="lang-css"><code>div {
+                background-size: cover;
+            }</code></pre>
+            <li>CSS property (opacity)</li>
+            <pre class="lang-css"><code>div {
+                opacity: 0.5;
+            }</code></pre>
+            <li>CSS property (box-shadow)</li>
+            <pre class="lang-css"><code>div {
+                box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+            }</code></pre>
+            <li>CSS property (text-decoration)</li>
+            <pre class="lang-css"><code>a {
+                text-decoration: none;
+            }</code></pre>
+            <li>CSS property (transition)</li>
+            <pre class="lang-css"><code>button {
+                transition: background-color 0.3s ease;
+            }</code></pre>
+            <li>CSS property (border-radius)</li>
+            <pre class="lang-css"><code>.rounded {
+    border-radius: 5px;
+}</code></pre>
+            <li>CSS property (box-sizing)</li>
+            <pre class="lang-css"><code>* {
+    box-sizing: border-box;
+}</code></pre>
+            <li>CSS property (text-transform)</li>
+            <pre class="lang-css"><code>.uppercase {
+    text-transform: uppercase;
+}</code></pre>
+            <li>CSS property (overflow)</li>
+            <pre class="lang-css"><code>div {
+    overflow: hidden;
+}</code></pre>
+            <li>CSS property (z-index)</li>
+            <pre class="lang-css"><code>.overlay {
+    position: absolute;
+    z-index: 999;
+}</code></pre>
+            <li>CSS property (cursor)</li>
+            <pre class="lang-css"><code>button {
+    cursor: pointer;
+}</code></pre>
+            <li>CSS property (pointer-events)</li>
+            <pre class="lang-css"><code>a.disabled {
+    pointer-events: none;
+}</code></pre>
+            <li>CSS property (outline)</li>
+            <pre class="lang-css"><code>a:focus {
+    outline: 2px solid blue;
+}</code></pre>
+            <li>CSS property (word-wrap)</li>
+            <pre class="lang-css"><code>p {
+    word-wrap: break-word;
+}</code></pre>
+            <li>CSS property (text-overflow)</li>
+            <pre class="lang-css"><code>div {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}</code></pre>
+            <li>CSS property (white-space)</li>
+            <pre class="lang-css"><code>pre {
+    white-space: pre-wrap;
+}</code></pre>
+            <li>CSS property (positioning: absolute)</li>
+            <pre class="lang-css"><code>.popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}</code></pre>
+            <li>CSS property (positioning: fixed)</li>
+            <pre class="lang-css"><code>.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+}</code></pre>
+            <li>CSS property (positioning: relative)</li>
+            <pre class="lang-css"><code>.container {
+    position: relative;
+}</code></pre>
+            <li>CSS property (positioning: sticky)</li>
+            <pre class="lang-css"><code>.sticky {
+    position: sticky;
+    top: 0;
+}</code></pre>
+            <li>CSS property (flexbox: container)</li>
+            <pre class="lang-css"><code>.flex-container {
+    display: flex;
+}</code></pre>
+            <li>CSS property (flexbox: direction)</li>
+            <pre class="lang-css"><code>.flex-container {
+    flex-direction: row;
+}</code></pre>
+            <li>CSS property (flexbox: justify-content)</li>
+            <pre class="lang-css"><code>.flex-container {
+    justify-content: center;
+}</code></pre>
+            <li>CSS property (flexbox: align-items)</li>
+            <pre class="lang-css"><code>.flex-container {
+    align-items: center;
+}</code></pre>
+            <li>CSS property (flexbox: flex)</li>
+            <pre class="lang-css"><code>.flex-item {
+    flex: 1;
+}</code></pre>
+            <li>CSS property (grid: container)</li>
+            <pre class="lang-css"><code>.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}</code></pre>
+            <li>CSS property (grid: column gap)</li>
+            <pre class="lang-css"><code>.grid-container {
+    grid-column-gap: 10px;
+}</code></pre>
+            <li>CSS property (grid: row gap)</li>
+            <pre class="lang-css"><code>.grid-container {
+    grid-row-gap: 10px;
+}</code></pre>
+            <li>CSS property (grid: column span)</li>
+            <pre class="lang-css"><code>.grid-item {
+    grid-column: span 2;
+}</code></pre>
+            <li>CSS property (grid: row span)</li>
+            <pre class="lang-css"><code>.grid-item {
+    grid-row: span 2;
+}</code></pre>
+            <li>CSS property (grid: column start)</li>
+            <pre class="lang-css"><code>.grid-item {
+    grid-column-start: 2;
+}</code></pre>
+            <li>CSS property (grid: column end)</li>
+            <pre class="lang-css"><code>.grid-item {
+    grid-column-end: 4;
+}</code></pre>
+            <li>CSS property (grid: row start)</li>
+            <pre class="lang-css"><code>.grid-item {
+    grid-row-start: 2;
+}</code></pre>
+            <li>CSS property (grid: row end)</li>
+            <pre class="lang-css"><code>.grid-item {
+    grid-row-end: 4;
+}</code></pre>
+            <li>CSS property (grid: area)</li>
+            <pre class="lang-css"><code>.grid-item {
+    grid-area: 1 / 1 / 2 / 3;
+}</code></pre>
+            <li>CSS property (transform: translate)</li>
+            <pre class="lang-css"><code>.translate {
+    transform: translate(50px, 100px);
+}</code></pre>
+            <li>CSS property (transform: rotate)</li>
+            <pre class="lang-css"><code>.rotate {
+    transform: rotate(45deg);
+}</code></pre>
+            <li>CSS property (transform: scale)</li>
+            <pre class="lang-css"><code>.scale {
+    transform: scale(1.5);
+}</code></pre>
+            <li>CSS property (transform: skew)</li>
+            <pre class="lang-css"><code>.skew {
+    transform: skew(20deg, 10deg);
+}</code></pre>
+            <li>CSS property (transition: property)</li>
+            <pre class="lang-css"><code>button {
+    transition: background-color 0.3s ease;
+}</code></pre>
+            <li>CSS property (transition: duration)</li>
+            <pre class="lang-css"><code>button {
+    transition: background-color 1s;
+}</code></pre>
+            <li>CSS property (transition: timing function)</li>
+            <pre class="lang-css"><code>button {
+    transition: background-color 0.3s ease-in-out;
+}</code></pre>
+            <li>CSS property (transition: delay)</li>
+            <pre class="lang-css"><code>button {
+    transition: background-color 0.3s ease 1s;
+}</code></pre>
+            <li>CSS property (animation: name)</li>
+            <pre class="lang-css"><code>@keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+}
+
+div {
+    animation-name: example;
+}</code></pre>
+            <li>CSS property (animation: duration)</li>
+            <pre class="lang-css"><code>@keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+}
+
+div {
+    animation-name: example;
+    animation-duration: 4s;
+}</code></pre>
+            <li>CSS property (animation: timing function)</li>
+            <pre class="lang-css"><code>@keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+}
+
+div {
+    animation-name: example;
+    animation-timing-function: ease-in-out;
+}</code></pre>
+            <li>CSS property (animation: delay)</li>
+            <pre class="lang-css"><code>@keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+}
+
+div {
+    animation-name: example;
+    animation-delay: 2s;
+}</code></pre>
+            <li>CSS property (animation: iteration count)</li>
+            <pre class="lang-css"><code>@keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+}
+div {
+    animation-name: example;
+    animation-iteration-count: 3;
+}</code></pre>
+<li>CSS selector (element)</li>
+            <pre class="lang-css"><code>p {
+    color: blue;
+}</code></pre>
+            <li>CSS comment</li>
+            <pre class="lang-css"><code>/* This is a CSS comment */</code></pre>
+
+            <div id="progress">
+                <span id="progress-value"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                        height="24" color="#000000" fill="none">
+                        <path d="M18 15C18 15 13.5811 9.00001 12 9C10.4188 8.99999 6 15 6 15" stroke="currentColor"
+                            stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </span>
+            </div>
+          
+        </ol>
+    </div>
+    <footer>
+        <div class="copyright">
+            <p style="color: white;">&copy; 2024 CodePlayGround. All rights reserved.</p>
+        </div>
+        <div class="footer">
+            <a href="https://www.linkedin.com/in/arhamhussain/"><img class="" src="svg/linkedin.svg"></a>
+            <a href="https://www.facebook.com"><img class="" src="svg/fb.svg"></a>
+            <a href="https://www.twitter.com"><img class="" src="svg/x.svg"></a>
+            <a href="https://www.instagram.com"><img class="" src="svg/insta.svg"></a>
+        </div>
+    </footer>
+</body>
+
+</html>
